@@ -1,7 +1,7 @@
 /****************************************************************
 **                                                             **
 **                          TÍTOL:                             **
-**                          BLINK                              **
+**                       LedPolsador                           **
 **                                                             **
 **  NOM: MOHAMED EL MARNISSI                  DATA: 23/01/2017 **
 ****************************************************************/
@@ -27,11 +27,11 @@ void setup() {                //Inicia el bloc
 
 void loop() {                 // inicia el bucle del programa
  // Llegeix estat entrades:
-  buttonState = digitalRead(4);
+  digitalRead(4);
 
   // Comprova estat polsador.
   // SI polsador apretat:
-  if (buttonState =digitalRead(4)= HIGH) {
+  if (digitalRead(4),HIGH) {
     // Encen LED:
     digitalWrite(13, HIGH);
   } else {
