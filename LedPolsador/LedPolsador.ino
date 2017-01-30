@@ -17,7 +17,7 @@
 
 void setup() {                //Inicia el bloc
 // inicia pin 13 com a sortida:
-  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
 // initialize inicia pin 4 com a entrada:
   pinMode(4, INPUT);
 
@@ -31,12 +31,12 @@ void loop() {                 // inicia el bucle del programa
 
   // Comprova estat polsador.
   // SI polsador apretat:
-  if (digitalRead(4),HIGH) {
+  if (digitalRead(4)==HIGH) {
     // Encen LED:
-    digitalWrite(13, HIGH);
+    digitalWrite(12, HIGH);
   } else {
     // En qualsevol altre cas apaga LED:
-    digitalWrite(13, LOW);
+    digitalWrite(12, LOW);
   }
 
 }                          //Finalitza el bloc
